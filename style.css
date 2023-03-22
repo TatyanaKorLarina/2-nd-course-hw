@@ -46,6 +46,11 @@
     padding-left: 120px;
     width: 481px;
     height: 64;
+    display: inline;
+}
+
+.go {
+    font-weight: bold;
 }
 
 .button {
