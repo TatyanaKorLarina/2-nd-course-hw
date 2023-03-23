@@ -99,25 +99,19 @@
     padding-bottom: 32px;
     padding-left: 32px;
     border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .gameleft {
     background-image: url(./img/gameleft.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 .gamemid {
     background-image: url(./img/gamemid.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 .gameright {
     background-image: url(./img/gameright.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
