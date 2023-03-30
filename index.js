@@ -77,8 +77,10 @@ if (e>100 || d>100) {
     console.log('Неверно');
 }
 
-let a = 2;
-let b = 3;
+let a = '2';
+let b = '3';
+a = Number ('2');
+b = Number ('3');
 alert (a+b);
 
 let monthNumber = Number (prompt ('Введите номер месяца'));
@@ -110,6 +112,7 @@ switch (monthNumber) {
 
 let num = Number (prompt ('Пожалуйста, введите любое число'));
 num = Math.abs (num);
+Number.isNaN(num)
 if (num%2 ===1) {
     alert ('Число нечетное');
 } else if (num%2 ===0) {
