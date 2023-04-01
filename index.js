@@ -52,7 +52,7 @@ console.log(user[info]);
 
 let userName = prompt('Как вас зовут?');
 let greeting = `Привет, ${userName}!`;
-alert(greeting);*/
+alert(greeting);
 
 let password = 'пароль';
 let input = prompt ('Введите пароль');
@@ -141,9 +141,48 @@ if (clientOS === 0 && clientDeviceYear >=2015) {
     console.log('Установите облегченную версию приложения для Android по ссылке'); 
 } else {
     console.log('Мы не работаем с данной ОС');
+}*/
+
+let i = 1;
+let num = 2;
+while (i<=num) {
+    console.log('Привет');
+    i++;
 }
 
+let j = 1;
+while (j < 6) {
+    console.log(j);
+    j++;
+}
 
+let k = 7;
+while (k < 23) {
+    console.log(k);
+    k++
+}
+
+let obj = {
+    'Коля': 200,
+    'Вася': 300,
+    'Петя': 400
+};
+for (let key in obj) {
+    alert(`${key} - зарплата ${obj[key]} долларов.`)
+}
+
+let n = 1000;
+while (n > 50) {
+    n = n / 2;
+}
+console.log(n);
+
+for (let dayNumber = 1; dayNumber<=31; dayNumber++) {
+    if (dayNumber % 7 ==0) {
+        alert(`Сегодня пятница, ${dayNumber}-е число. Необходимо подготовить отчет.`);
+        continue;
+    }
+}
 
     
 
