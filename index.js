@@ -144,8 +144,8 @@ if (clientOS === 0 && clientDeviceYear >=2015) {
 }*/
 
 let i = 1;
-let num = 2;
-while (i<=num) {
+let l = 2;
+while (i<=l) {
     console.log('Привет');
     i++;
 }
@@ -172,13 +172,18 @@ for (let key in obj) {
 }
 
 let n = 1000;
+let num = 0;
 while (n > 50) {
+    num++;
     n = n / 2;
 }
 console.log(n);
+console.log(num);
 
-for (let dayNumber = 1; dayNumber<=31; dayNumber++) {
-    if (dayNumber % 7 ==0) {
+let dayNumberFri = prompt('Введите номер первой пятницы месяца (число от 1 до 7)');
+
+for (let dayNumber = dayNumberFri; dayNumber<=31; dayNumber++) {
+    if (dayNumber % 7 == dayNumberFri) {
         alert(`Сегодня пятница, ${dayNumber}-е число. Необходимо подготовить отчет.`);
         continue;
     }
