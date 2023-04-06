@@ -123,4 +123,60 @@
     background-image: url(./img/gameright.jpg);
 }
 
+.games {
+    background-image: url(./img/gameback.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    gap: 135px;
+    &__seasons { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    padding-left: 120px;
+    flex-direction: column;
+    }
+    &__img {
+        width: 485px;
+        height: 333px;
+    }
+    &__heading {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+    }
+    &__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+    }
+    &__button {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        background: #9C0332;
+        border-radius: 30px;
+        width: 234px;
+        height: 49px;
+        justify-content: center;
+    }
+}
+
 @import 'mobile';
