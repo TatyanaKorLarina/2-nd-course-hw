@@ -50,5 +50,40 @@
         height: 300px;
         padding-left: 16px;
     }
- 
+
+    .games {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 64px;
+
+        &__seasons {
+            padding-left: 0%; 
+            align-items: center; 
+            padding-top: 51px; 
+            padding-bottom: 0%;
+        }
+
+        &__heading {
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        &__img {
+            max-width: 344px;
+            max-height: 236px;
+            padding-top: 32px;
+            padding-bottom: 85px;
+        }
+    }
 }

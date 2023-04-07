@@ -251,9 +251,6 @@ if (age < 0) {
 
  printMessage();
 
- //let a = Number;
- //let b = Number;
-
  function correctNumber(a, b) {
     if (!isNaN(a || b)) {
         return a * b;
@@ -341,6 +338,21 @@ console.log(circle1.getArea());
 console.log(circle1.getPerimeter());
 console.log(circle2.getArea());
 console.log(circle2.getPerimeter());
+
+function getSeason() {
+    const monthNumber = Number(prompt('Введите номер месяца'))
+    if (monthNumber <= 11 && monthNumber >= 9) {
+        alert ('Осень');        
+    } else if (monthNumber === 12 || monthNumber === 1 || monthNumber === 2) {
+        alert ('Зима');        
+    } else if (monthNumber >= 3 && monthNumber <= 5) {
+        alert ('Весна');        
+    } else if (monthNumber >= 6 && monthNumber <= 8) {
+        alert ('Лето');
+    } else {
+        console.log('Такого месяца не существует');
+    } 
+}
 
 
 
