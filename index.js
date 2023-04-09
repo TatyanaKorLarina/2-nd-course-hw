@@ -370,7 +370,19 @@ let nums = [1, 3, 5, 10, 20];
 nums = nums.join('');
 console.log(nums);
 
-let arr = [
+let arr = [];
+
+for (let i = 0; i < 3; i++) {
+	arr[i] = []; 
+	
+	for (let j = 0; j < 3; j++) {
+		arr[i].push(1); 
+	}
+}
+
+console.log(arr);
+
+/*let arr = [
     [1, 1, 1],
     [1, 1, 1],
     [1, 1, 1],
@@ -378,7 +390,7 @@ let arr = [
 
 for (let item of arr) {
     console.log(item);
-};
+};*/
 
 let array = [1, 1, 1];
 array.push (2, 2, 2);
