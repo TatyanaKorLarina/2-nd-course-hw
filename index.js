@@ -362,10 +362,14 @@ for (let i = 0; i < numbers.length; i++) {
 }
 
 const numbs = [1, 5, 4, 10, 0, 3];
+let ind = numbs.indexOf (4);
+console.log(ind);
+
+/*const numbs = [1, 5, 4, 10, 0, 3];
 numbs.forEach ((el, index) => {
     if (el == 4) {
         console.log(`${index}`);
-}});
+}});*/
 
 let nums = [1, 3, 5, 10, 20];
 nums = nums.join('');
@@ -405,7 +409,7 @@ console.log(numerals);
 
 let n = Number(prompt('Пожалуйста, введите любое число от 1 до 10'));
 let userNumbers = [1, 5, 4, 10, 0, 3];
-let search = userNumbers.includes (n);
+let search = userNumbers.includes(n);
 console.log(search);
 
 let letters = ['a', 'b', 'c', 'd', 'e', 'f'];
@@ -413,12 +417,16 @@ letters.reverse();
 letters = letters.join('');
 console.log(letters);
 
-let arrNumbers = [
+let arrNumbers = [[1, 2, 3,],[4, 5, 6]];
+let arrayNumb = arrNumbers.flat();
+console.log(arrayNumb);
+
+/*let arrNumbers = [
     [1, 2, 3],
     [4, 5, 6]
 ];
 let arrayNumb = arrNumbers[0].concat(arrNumbers[1]);
-console.log(arrayNumb);
+console.log(arrayNumb);*/
 
 let random = [7, 4, 8, 3, 4, 2];
 for (let i = 0; i < random.length - 1; i++) {
@@ -431,7 +439,7 @@ function getSquareNumbers(square = [12, 5, 7, 43, 2]) {
 }
 getSquareNumbers();
 
-function getLengthWords(longWords = ['word', 're', '', 'a', 'Hello, world!']) {
+function getLengthWords(longWords = []) {
     return getLength = longWords.map(str => str.length);  
 }
 
@@ -441,12 +449,16 @@ console.log(getLength);
 let negative = [1, 2, 3, -1, -2, -3, 17, -54, 0];
 
 let result1 = negative.filter(function(elem) {
+    return elem < 0
+    });
+
+/*let result1 = negative.filter(function(elem) {
     if (elem < 0) {
         return true;
     } else {
         return false;
     };
-});
+});*/
 
 console.log(result1);
 
