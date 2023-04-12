@@ -354,7 +354,7 @@ function getSeason() {
     } 
 }*/
 
-const numbers = [1, 5, 4, 10, 0, 3];
+/*const numbers = [1, 5, 4, 10, 0, 3];
 for (let i = 0; i < numbers.length; i++) {
     console.log(numbers [i]);
     if (numbers [i] == 10) break;
@@ -371,7 +371,7 @@ numbs.forEach ((el, index) => {
         console.log(`${index}`);
 }});*/
 
-let nums = [1, 3, 5, 10, 20];
+/*let nums = [1, 3, 5, 10, 20];
 nums = nums.join('');
 console.log(nums);
 
@@ -397,7 +397,7 @@ for (let item of arr) {
     console.log(item);
 };*/
 
-let array = [1, 1, 1];
+/*let array = [1, 1, 1];
 array.push (2, 2, 2);
 console.log(array);
 
@@ -428,7 +428,7 @@ console.log(arrayNumb);
 let arrayNumb = arrNumbers[0].concat(arrNumbers[1]);
 console.log(arrayNumb);*/
 
-let random = [7, 4, 8, 3, 4, 2];
+/*let random = [7, 4, 8, 3, 4, 2];
 for (let i = 0; i < random.length - 1; i++) {
  console.log(random [i] + random [i + 1]);   
 }
@@ -460,7 +460,7 @@ let result1 = negative.filter(function(elem) {
     };
 });*/
 
-console.log(result1);
+/*console.log(result1);
 
 let arrRandom = [];
 for (let i = 0; i < 10; i++) {
@@ -485,6 +485,23 @@ const getAverage = (numbersAverage) => {
   return sum / 6; 
 };
 
-console.log(getAverage(arrayRandom)); 
+console.log(getAverage(arrayRandom)); */
+
+let str = 'js';
+console.log(str.toUpperCase());
+
+function searchStart(words, syllable) {
+    words.forEach((word) => {
+        if (word.toLowerCase().startsWith(syllable.toLowerCase())) {
+            console.log(word);
+        }
+        
+    });
+    
+}
+
+searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'); // ['кошка', 'комар']
+searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'); // ['груша']
+searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'); // []
 
 
