@@ -189,7 +189,7 @@ for (let dayNumber = dayNumberFri; dayNumber<=31; dayNumber++) {
     }
 }*/
 
-function min(a, b) {
+/*function min(a, b) {
     if (a <= b) {
         return a;
     } else {
@@ -352,10 +352,127 @@ function getSeason() {
     } else {
         console.log('Такого месяца не существует');
     } 
+}*/
+
+const numbers = [1, 5, 4, 10, 0, 3];
+for (let i = 0; i < numbers.length; i++) {
+    console.log(numbers [i]);
+    if (numbers [i] == 10) break;
+    
 }
 
+const numbs = [1, 5, 4, 10, 0, 3];
+numbs.forEach ((el, index) => {
+    if (el == 4) {
+        console.log(`${index}`);
+}});
 
+let nums = [1, 3, 5, 10, 20];
+nums = nums.join('');
+console.log(nums);
 
+let arr = [];
 
+for (let i = 0; i < 3; i++) {
+	arr[i] = []; 
+	
+	for (let j = 0; j < 3; j++) {
+		arr[i].push(1); 
+	}
+}
+
+console.log(arr);
+
+/*let arr = [
+    [1, 1, 1],
+    [1, 1, 1],
+    [1, 1, 1],
+];
+
+for (let item of arr) {
+    console.log(item);
+};*/
+
+let array = [1, 1, 1];
+array.push (2, 2, 2);
+console.log(array);
+
+let numerals = [9, 8, 7, 'a', 6, 5];
+numerals = numerals.sort();
+console.log(numerals);
+numerals.pop();
+console.log(numerals);
+
+let n = Number(prompt('Пожалуйста, введите любое число от 1 до 10'));
+let userNumbers = [1, 5, 4, 10, 0, 3];
+let search = userNumbers.includes (n);
+console.log(search);
+
+let letters = ['a', 'b', 'c', 'd', 'e', 'f'];
+letters.reverse();
+letters = letters.join('');
+console.log(letters);
+
+let arrNumbers = [
+    [1, 2, 3],
+    [4, 5, 6]
+];
+let arrayNumb = arrNumbers[0].concat(arrNumbers[1]);
+console.log(arrayNumb);
+
+let random = [7, 4, 8, 3, 4, 2];
+for (let i = 0; i < random.length - 1; i++) {
+ console.log(random [i] + random [i + 1]);   
+}
+
+function getSquareNumbers(square = [12, 5, 7, 43, 2]) {
+    let result = square.map(item => item**2);
+    console.log(result);  
+}
+getSquareNumbers();
+
+function getLengthWords(longWords = ['word', 're', '', 'a', 'Hello, world!']) {
+    return getLength = longWords.map(str => str.length);  
+}
+
+getLengthWords(['word', 're', '', 'a', 'Hello, world!']); 
+console.log(getLength);
+
+let negative = [1, 2, 3, -1, -2, -3, 17, -54, 0];
+
+let result1 = negative.filter(function(elem) {
+    if (elem < 0) {
+        return true;
+    } else {
+        return false;
+    };
+});
+
+console.log(result1);
+
+let arrRandom = [];
+for (let i = 0; i < 10; i++) {
+  arrRandom[i] = Math.round(Math.random() * 10);
+}
+console.log(arrRandom);
+
+let result2 = arrRandom.filter(item => item% 2 == 0);
+console.log(result2);
+
+let arrayRandom = [];
+for (let i = 0; i < 6; i++) {
+  arrayRandom[i] = Math.round(Math.random() * 10);
+}
+console.log(arrayRandom);
+
+const getAverage = (numbersAverage) => {
+  let sum = 0; 
+  for (let i = 0; i < 6; i += 1) { 
+    sum += numbersAverage[i]; 
+  }
+  return sum / 6; 
+};
+
+console.log(getAverage(arrayRandom)); 
 
 
