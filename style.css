@@ -128,6 +128,10 @@
   background-position: center;
   background-size: cover;
   display: flex;
+  flex-direction: column;
+}
+.games__main {
+  display: flex;
   gap: 135px;
 }
 .games__seasons {
@@ -142,6 +146,24 @@
 .games__img {
   width: 485px;
   height: 333px;
+}
+.games__image {
+  width: 485px;
+  height: 333px;
+  padding-left: 120px;
+  padding-bottom: 239px;
+}
+.games__imagem {
+  display: none;
+}
+.games__words {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  padding-left: 120px;
+  flex-direction: column;
+  padding-bottom: 280px;
 }
 .games__heading {
   font-family: "Montserrat";
@@ -235,10 +257,25 @@
     flex-direction: column;
     gap: 64px;
   }
+  .games__main {
+    padding-left: 0%;
+    align-items: center;
+    padding-top: 51px;
+    padding-bottom: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 64px;
+  }
   .games__seasons {
     padding-left: 0%;
     align-items: center;
     padding-top: 51px;
+    padding-bottom: 0%;
+  }
+  .games__words {
+    padding-left: 0%;
+    align-items: center;
     padding-bottom: 0%;
   }
   .games__heading {
@@ -259,5 +296,17 @@
     max-height: 236px;
     padding-top: 32px;
     padding-bottom: 85px;
+    margin-left: 0%;
+  }
+  .games__image {
+    display: none;
+  }
+  .games__imagem {
+    display: block;
+    max-width: 344px;
+    max-height: 236px;
+    padding-top: 32px;
+    padding-bottom: 85px;
+    margin-left: 0%;
   }
 }/*# sourceMappingURL=style.css.map */

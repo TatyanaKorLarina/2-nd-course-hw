@@ -552,3 +552,45 @@ const months = ["Январь", "Февраль", "Март", "Апрель", "�
 let myDate = new Date();
 let fullDate = "Дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " - это " + days[myDate.getDay()] + ". Время: " + myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
 console.log(fullDate);
+
+function getWords() {
+    let list = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    listWords = list.sort(() => Math.random() - 0.5);
+    alert (listWords);
+
+    let answer = prompt("Чему равнялся первый элемент массива?");
+    let answer2 = prompt("Чему равнялся последний элемент массива?");
+    if (answer === listWords[0] && answer2 === listWords[6]) {
+        alert("Поздравляю! Вы угадали!");
+    } else if (answer === listWords[0] || answer2 === listWords[6]) {
+        alert("Вы были близки к победе!");
+    } else {
+        alert("Вы ответили неверно");
+    };
+    /*function riddle(question, answer) {
+        let userAnswer = prompt(question);
+        if (userAnswer === answer) {
+            alert("Поздравляю! Вы угадали!");
+        } else {
+            alert("Вы были близки к победе!")
+        }    
+    }
+    riddle("Чему равнялся первый элемент массива?", listWords[0]);
+    riddle("Чему равнялся последний элемент массива?", listWords[6]);*/
+} 
+getWords(list = []);
+
+
+
+    /*const monthNumber = Number(prompt('Введите номер месяца'))
+    if (monthNumber <= 11 && monthNumber >= 9) {
+        alert ('Осень');        
+    } else if (monthNumber === 12 || monthNumber === 1 || monthNumber === 2) {
+        alert ('Зима');        
+    } else if (monthNumber >= 3 && monthNumber <= 5) {
+        alert ('Весна');        
+    } else if (monthNumber >= 6 && monthNumber <= 8) {
+        alert ('Лето');
+    } else {
+        console.log('Такого месяца не существует');
+    } */

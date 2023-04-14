@@ -22,12 +22,23 @@
         <a href="#" class="game gameright">Игра 3</a>
     </nav>
 <article class="games center" id="gameSeasons">
-    <div class="games__seasons">
-        <h1 class="games__heading">Времена года!</h1>
-        <p class="games__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
-        <button class="games__button" onclick="getSeason();">Играть!</button>
+    <div class="games__main">
+        <div class="games__seasons">
+            <h1 class="games__heading">Времена года!</h1>
+            <p class="games__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
+            <button class="games__button" onclick="getSeason();">Играть!</button>
+        </div>
+        <img class = "games__img" src="./img/gameseasons.svg" alt="game">   
     </div>
-    <img class = "games__img" src="./img/gameseasons.svg" alt="game">    
+    <div class="games__main">
+        <img class = "games__image" src="./img/gamewords.svg" alt="game">
+        <div class="games__words">
+            <h1 class="games__heading">Запомни слова </h1>
+            <p class="games__text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
+            <button class="games__button" onclick="getWords();">Играть</button>
+        </div>
+        <img class = "games__imagem" src="./img/gamewords.svg" alt="game">
+    </div>  
 </article>
     <script src="./index.js"></script>
 </body>

@@ -56,12 +56,28 @@
         flex-wrap: wrap;
         flex-direction: column;
         gap: 64px;
+        &__main {
+            padding-left: 0%; 
+            align-items: center; 
+            padding-top: 51px; 
+            padding-bottom: 0%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column; 
+            gap: 64px;
+        }
 
         &__seasons {
             padding-left: 0%; 
             align-items: center; 
             padding-top: 51px; 
             padding-bottom: 0%;
+        }
+
+        &__words {
+            padding-left: 0%; 
+            align-items: center; 
+            padding-bottom: 0%; 
         }
 
         &__heading {
@@ -84,6 +100,19 @@
             max-height: 236px;
             padding-top: 32px;
             padding-bottom: 85px;
+            margin-left: 0%;
+        }
+        &__image {
+            display: none;
+        }
+
+        &__imagem {
+            display: block;
+            max-width: 344px;
+            max-height: 236px;
+            padding-top: 32px;
+            padding-bottom: 85px;
+            margin-left: 0%;
         }
     }
 }
