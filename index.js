@@ -504,4 +504,51 @@ searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'); /
 searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'); // ['груша']
 searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'); // []
 
+let num = 32.58884;
+console.log(Math.floor(num));
+console.log(Math.round(num));
+console.log(Math.ceil(num));
 
+console.log(Math.min(52, 53, 49, 77, 21, 32));
+console.log(Math.max(52, 53, 49, 77, 21, 32));
+
+function getRandomNumber() {
+    return Math.round(Math.random() * 10);
+}
+console.log(getRandomNumber(0,10));  
+
+
+let p = prompt('Пожалуйста, введите любое целое число');
+function getRandomArrNumbers() {
+    for (let i = 0; i < Math.floor(p / 2); i++) {
+        arrayRandom[i] = Math.round(Math.random() * p);
+    };
+};
+console.log(arrayRandom = []);    
+
+getRandomArrNumbers(p);
+
+let minV = prompt('Пожалуйста, введите первое целое число');
+let maxV = prompt('Пожалуйста, введите второе целое число, которое больше первого');
+
+function getRandomInt(minV, maxV) {
+    minV = Math.ceil(minV);
+    maxV = Math.floor(maxV);
+    return Math.floor(Math.random() * (maxV - minV)) + minV;
+} 
+  
+console.log(getRandomInt(minV, maxV));
+
+let currentDate = new Date();
+console.log(currentDate);
+
+let today = new Date();
+today.setDate(today.getDate() + 73);
+console.log(today);
+
+
+const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+let myDate = new Date();
+let fullDate = "Дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " - это " + days[myDate.getDay()] + ". Время: " + myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
+console.log(fullDate);
