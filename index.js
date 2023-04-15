@@ -354,7 +354,7 @@ function getSeason() {
     } 
 }*/
 
-const numbers = [1, 5, 4, 10, 0, 3];
+/*const numbers = [1, 5, 4, 10, 0, 3];
 for (let i = 0; i < numbers.length; i++) {
     console.log(numbers [i]);
     if (numbers [i] == 10) break;
@@ -371,7 +371,7 @@ numbs.forEach ((el, index) => {
         console.log(`${index}`);
 }});*/
 
-let nums = [1, 3, 5, 10, 20];
+/*let nums = [1, 3, 5, 10, 20];
 nums = nums.join('');
 console.log(nums);
 
@@ -397,7 +397,7 @@ for (let item of arr) {
     console.log(item);
 };*/
 
-let array = [1, 1, 1];
+/*let array = [1, 1, 1];
 array.push (2, 2, 2);
 console.log(array);
 
@@ -428,7 +428,7 @@ console.log(arrayNumb);
 let arrayNumb = arrNumbers[0].concat(arrNumbers[1]);
 console.log(arrayNumb);*/
 
-let random = [7, 4, 8, 3, 4, 2];
+/*let random = [7, 4, 8, 3, 4, 2];
 for (let i = 0; i < random.length - 1; i++) {
  console.log(random [i] + random [i + 1]);   
 }
@@ -460,7 +460,7 @@ let result1 = negative.filter(function(elem) {
     };
 });*/
 
-console.log(result1);
+/*console.log(result1);
 
 let arrRandom = [];
 for (let i = 0; i < 10; i++) {
@@ -485,6 +485,112 @@ const getAverage = (numbersAverage) => {
   return sum / 6; 
 };
 
-console.log(getAverage(arrayRandom)); 
+console.log(getAverage(arrayRandom)); */
+
+let str = 'js';
+console.log(str.toUpperCase());
+
+function searchStart(words, syllable) {
+    words.forEach((word) => {
+        if (word.toLowerCase().startsWith(syllable.toLowerCase())) {
+            console.log(word);
+        }
+        
+    });
+    
+}
+
+searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'); // ['кошка', 'комар']
+searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'); // ['груша']
+searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'); // []
+
+let num = 32.58884;
+console.log(Math.floor(num));
+console.log(Math.round(num));
+console.log(Math.ceil(num));
+
+console.log(Math.min(52, 53, 49, 77, 21, 32));
+console.log(Math.max(52, 53, 49, 77, 21, 32));
+
+function getRandomNumber() {
+    return Math.round(Math.random() * 10);
+}
+console.log(getRandomNumber(0,10));  
 
 
+let p = prompt('Пожалуйста, введите любое целое число');
+function getRandomArrNumbers() {
+    for (let i = 0; i < Math.floor(p / 2); i++) {
+        arrayRandom[i] = Math.round(Math.random() * p);
+    };
+};
+console.log(arrayRandom = []);    
+
+getRandomArrNumbers(p);
+
+let minV = prompt('Пожалуйста, введите первое целое число');
+let maxV = prompt('Пожалуйста, введите второе целое число, которое больше первого');
+
+function getRandomInt(minV, maxV) {
+    minV = Math.ceil(minV);
+    maxV = Math.floor(maxV);
+    return Math.floor(Math.random() * (maxV - minV)) + minV;
+} 
+  
+console.log(getRandomInt(minV, maxV));
+
+let currentDate = new Date();
+console.log(currentDate);
+
+let today = new Date();
+today.setDate(today.getDate() + 73);
+console.log(today);
+
+
+const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+let myDate = new Date();
+let fullDate = "Дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " - это " + days[myDate.getDay()] + ". Время: " + myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
+console.log(fullDate);
+
+function getWords() {
+    let list = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    listWords = list.sort(() => Math.random() - 0.5);
+    alert (listWords);
+
+    let answer = prompt("Чему равнялся первый элемент массива?");
+    let answer2 = prompt("Чему равнялся последний элемент массива?");
+    if (answer === listWords[0] && answer2 === listWords[6]) {
+        alert("Поздравляю! Вы угадали!");
+    } else if (answer === listWords[0] || answer2 === listWords[6]) {
+        alert("Вы были близки к победе!");
+    } else {
+        alert("Вы ответили неверно");
+    };
+    /*function riddle(question, answer) {
+        let userAnswer = prompt(question);
+        if (userAnswer === answer) {
+            alert("Поздравляю! Вы угадали!");
+        } else {
+            alert("Вы были близки к победе!")
+        }    
+    }
+    riddle("Чему равнялся первый элемент массива?", listWords[0]);
+    riddle("Чему равнялся последний элемент массива?", listWords[6]);*/
+} 
+getWords(list = []);
+
+
+
+    /*const monthNumber = Number(prompt('Введите номер месяца'))
+    if (monthNumber <= 11 && monthNumber >= 9) {
+        alert ('Осень');        
+    } else if (monthNumber === 12 || monthNumber === 1 || monthNumber === 2) {
+        alert ('Зима');        
+    } else if (monthNumber >= 3 && monthNumber <= 5) {
+        alert ('Весна');        
+    } else if (monthNumber >= 6 && monthNumber <= 8) {
+        alert ('Лето');
+    } else {
+        console.log('Такого месяца не существует');
+    } */

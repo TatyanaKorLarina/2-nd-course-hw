@@ -129,7 +129,12 @@
     background-position: center;
     background-size: cover;
     display: flex;
-    gap: 135px;
+    flex-direction: column;
+    
+    &__main {
+        display: flex;
+        gap: 135px;
+    }
     &__seasons { 
     display: flex;
     flex-wrap: wrap;
@@ -142,6 +147,24 @@
     &__img {
         width: 485px;
         height: 333px;
+    }
+    &__image {
+        width: 485px;
+        height: 333px;
+        padding-left: 120px;
+        padding-bottom: 239px;
+    }
+    &__imagem {
+        display: none;
+    }
+    &__words {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        justify-content: center;
+        padding-left: 120px;
+        flex-direction: column;
+        padding-bottom: 280px;
     }
 
     &__heading {
