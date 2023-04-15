@@ -487,7 +487,7 @@ const getAverage = (numbersAverage) => {
 
 console.log(getAverage(arrayRandom)); */
 
-let str = 'js';
+/*let str = 'js';
 console.log(str.toUpperCase());
 
 function searchStart(words, syllable) {
@@ -576,9 +576,9 @@ function getWords() {
         }    
     }
     riddle("Чему равнялся первый элемент массива?", listWords[0]);
-    riddle("Чему равнялся последний элемент массива?", listWords[6]);*/
+    riddle("Чему равнялся последний элемент массива?", listWords[6]);
 } 
-getWords(list = []);
+getWords(list = []);*/
 
 
 
@@ -594,3 +594,20 @@ getWords(list = []);
     } else {
         console.log('Такого месяца не существует');
     } */
+
+arr = [];
+    function mult(arr) {
+        return Math.round(arr.reduce((acc,curr)=>acc*curr));  
+    };
+    
+    function sum(arr) {
+        return Math.round(arr.reduce((acc, curr) => acc + curr, 0));
+    };
+            
+function getResult(arr, callback) {
+    console.log(callback(arr));
+};
+
+getResult ([3, 4, 1, 9], mult); //108
+getResult ([3, 4, 1, 9], sum); //17
+
