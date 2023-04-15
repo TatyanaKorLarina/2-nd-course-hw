@@ -651,3 +651,16 @@ function each(arr, callback) {
 each(arr, reversArr); // ['two', 9, '4', 1]
 each(arr, toNumberArr); // [1, 4, 0, 9]   
 
+
+let timer = (deadline) => {
+    const interval = setInterval(() => {
+        console.log(new Date());
+    }, 3000);
+    setTimeout(() => {
+    clearInterval(interval);
+    console.log("30 секунд прошло")    
+    }, 30000)
+    
+};
+
+timer(new Date());
