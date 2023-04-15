@@ -664,3 +664,22 @@ let timer = (deadline) => {
 };
 
 timer(new Date());
+
+function calling() {
+    console.log('Звоню!')
+};
+
+function beeps(callback) {
+    setTimeout(() => {
+        console.log('Идут гудки...'); 
+        callback(talk);
+    },  1000);
+}
+
+function talk() {
+    console.log('Разговор');
+    
+}
+
+calling();
+beeps(talk);
