@@ -595,14 +595,14 @@ getWords(list = []);*/
         console.log('Такого месяца не существует');
     } */
 
-arr = [];
-    function mult(arr) {
-        return Math.round(arr.reduce((acc,curr)=>acc*curr));  
-    };
+/*arr = [];
+function mult(arr) {
+    return Math.round(arr.reduce((acc,curr)=>acc*curr));  
+};
     
-    function sum(arr) {
-        return Math.round(arr.reduce((acc, curr) => acc + curr, 0));
-    };
+function sum(arr) {
+    return Math.round(arr.reduce((acc, curr) => acc + curr, 0));
+};
             
 function getResult(arr, callback) {
     console.log(callback(arr));
@@ -626,5 +626,28 @@ const users = [
 	{name: 'Bob', age: 44}
 ];
 users.sort(compareUser);
-console.log(users);
+console.log(users);*/
+
+
+
+
+function reversArr(arr) {
+    arr = [1, '4', 9, 'two'];
+    return arr.reverse();
+};
+
+
+function toNumberArr(arr) {
+    return arr.map(Number);
+};
+const arr = [1, '4', false, 9, 'two'];
+ 
+function each(arr, callback) {
+    console.log(callback(arr));
+    if (isNaN()) {
+        return arr.pop();
+    };
+};
+each(arr, reversArr); // ['two', 9, '4', 1]
+each(arr, toNumberArr); // [1, 4, 0, 9]   
 
