@@ -487,7 +487,7 @@ const getAverage = (numbersAverage) => {
 
 console.log(getAverage(arrayRandom)); */
 
-let str = 'js';
+/*let str = 'js';
 console.log(str.toUpperCase());
 
 function searchStart(words, syllable) {
@@ -576,9 +576,9 @@ function getWords() {
         }    
     }
     riddle("Чему равнялся первый элемент массива?", listWords[0]);
-    riddle("Чему равнялся последний элемент массива?", listWords[6]);*/
+    riddle("Чему равнялся последний элемент массива?", listWords[6]);
 } 
-getWords(list = []);
+getWords(list = []);*/
 
 
 
@@ -594,3 +594,92 @@ getWords(list = []);
     } else {
         console.log('Такого месяца не существует');
     } */
+
+/*arr = [];
+function mult(arr) {
+    return Math.round(arr.reduce((acc,curr)=>acc*curr));  
+};
+    
+function sum(arr) {
+    return Math.round(arr.reduce((acc, curr) => acc + curr, 0));
+};
+            
+function getResult(arr, callback) {
+    console.log(callback(arr));
+};
+
+getResult ([3, 4, 1, 9], mult); //108
+getResult ([3, 4, 1, 9], sum); //17
+
+function compareUser(a, b) {
+    if (a.age > b.age) return 1;
+    if (a.age < b.age) return -1;
+    return 0;        
+};   
+
+
+const users = [
+	{name: 'Jon', age: 22},
+	{name: 'Richard', age: 18},
+	{name: 'Anton', age: 32},
+	{name: 'Lida', age: 23},
+	{name: 'Bob', age: 44}
+];
+users.sort(compareUser);
+console.log(users);*/
+
+
+
+
+function reversArr(arr) {
+    arr = [1, '4', 9, 'two'];
+    return arr.reverse();
+};
+
+
+function toNumberArr(arr) {
+    return arr.map(Number);
+};
+const arr = [1, '4', false, 9, 'two'];
+ 
+function each(arr, callback) {
+    console.log(callback(arr));
+    if (isNaN()) {
+        return arr.pop();
+    };
+};
+each(arr, reversArr); // ['two', 9, '4', 1]
+each(arr, toNumberArr); // [1, 4, 0, 9]   
+
+
+let timer = (deadline) => {
+    const interval = setInterval(() => {
+        console.log(new Date());
+    }, 3000);
+    setTimeout(() => {
+    clearInterval(interval);
+    console.log("30 секунд прошло")    
+    }, 30000)
+    
+};
+
+timer(new Date());
+
+function calling() {
+    console.log('Звоню!')
+};
+
+function beeps(callback) {
+    setTimeout(() => {
+        console.log('Идут гудки...'); 
+        callback(talk);
+    },  1000);
+}
+
+function talk() {
+    console.log('Разговор');
+    
+}
+
+calling();
+beeps(talk);
